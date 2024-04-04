@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tip Calculator</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+<body>
+	<div class="container">
+        <div class="lab3"><p> ITMD 541 - Lab 3 - Shashikant Yadav</p> </div>
+        <div class="title"><h1>Tip Calculator</h1> </div>
+      
+        <div class="totalslabel"> <label for="billTotal">Bill Total:</label></div>
+        <div id="totalsInput"> <input type="text" name="billTotal" id="billTotalInput" placeholder="Enter a Number ($)"
+            onchange="triggerError()">
+            </br>
+            <span id="billInputError" style="color: rgb(255, 0, 0); display: none;">Please enter a valid number</span>
+        </div>
+        
+        <div class="tipslabel"><label for="tip">Tip:</label></div>
+        <div id="tipsInput"> <input type="range" name="tip" id="sliderInput" min="0" max="100" value="20"> </div>
+        
+        <div class="tipPercentgelabel"> <label for="tippercentage">Tip Percentage:</label></div>
+        <div id="tipPercentOutput"> <output type="number" name="tippercentage" id="tipPercentageBox"></div>
+      
+        <div class="tiptotallabel"> <label for="tipamount">Tip Amount:</label></div>
+        <div id="tiptotalOutput"> <output type="number" name="tipamount" id="tipAmountBox"></div>
+      
+        <div class="totalWithTiplabel"> <label for="totalwithtip">Total Bill w/ Tip:</label></div>
+        <div id="totalWithTipOutput"> <output type="number" name="totalwithtip" id="totalWithTipBox"></div>
+    </div>
+    
+    <script src="index.js"></script>
+
+</body>
+</html>

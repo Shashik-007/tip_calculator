@@ -1,0 +1,133 @@
+
+*{box-sizing:content-box;}
+
+body{
+    background-image: url('img.jpg');
+}
+
+
+h1 {
+    margin: 10px;
+}
+
+
+.container{
+  background-color: rgba(255, 255, 255, 0.5); 
+  backdrop-filter: blur(20px); 
+  height:80vh;
+  max-width: 85%;
+  display:grid;
+  grid-template-columns: 1fr 1.5fr;
+  grid-template-rows: repeat(7, 1fr);
+  margin:10% auto 15%;
+  box-shadow: 0 0 20px;
+  border-radius: 40px;
+  
+}
+
+@media screen and (min-width: 800px) {
+    .container {
+      max-width: 50%; 
+    }
+    
+  }
+
+.lab3{
+  grid-column-start:1;
+  grid-column-end:-1;
+  justify-self: center; 
+  align-self:end; 
+  margin-bottom: -10px; 
+}
+
+
+.title{
+    grid-column-start:1;
+    grid-column-end:-1;
+    justify-self: center; 
+    font-size: 1.1rem;
+    
+}
+
+
+
+.totalslabel{
+    display: flex;
+    justify-content: flex-end;
+    padding: 2.5% 5%;
+
+}
+
+#totalsInput input[type="text"] {
+    border: 1px solid #040404;
+    padding: 5px;
+    width: 60%;
+    height: 35%;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+.tipslabel{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 5%;
+
+}
+
+#tipsInput input[type="range"] {
+    width: 60%;
+   
+}
+
+
+
+.tipPercentgelabel{
+    display: flex;
+    justify-content: flex-end;
+    padding: 2.5% 5%;
+    
+}
+
+#tipPercentOutput{
+    border: 1px solid #040404;
+    padding: 5px;
+    width: 60%;
+    height:35%;
+    box-sizing: border-box;
+    background-color: #808080;
+    
+}
+
+.tiptotallabel{
+    display: flex;
+    justify-content: flex-end;
+    padding: 2.5% 5%;
+    
+}
+
+#tiptotalOutput{
+    border: 1px solid #040404;
+    padding: 5px;
+    width: 60%;
+    height: 35%;
+    box-sizing: border-box;
+    background-color: #808080;
+}
+
+.totalWithTiplabel{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 5%;
+    
+}
+
+#totalWithTipOutput{
+    border: 1px solid #040404;
+    padding: 5px;
+    width: 60%;
+    height: 35%;
+    box-sizing: border-box;
+    background-color: #808080;
+}
+
+
